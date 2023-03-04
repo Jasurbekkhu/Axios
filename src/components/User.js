@@ -7,7 +7,7 @@ function User(users) {
     {
       users.users?.map(user => (
         <div key={user.id} className="">
-          <Link to={`/users/${user.id}`} state={users}>
+          <Link to={`/users/${users.id}`} state={user}>
             <h1>{user.name}</h1>
           </Link>
         </div>
